@@ -69,10 +69,10 @@ window.addEventListener("scroll", function(event) {
     }, 2000);
 
     //here I got the positions of every section relative to the top of the viewport and choose the closest one
-    //I added 300 to this value because it triggered to fast (personal opinion)
+    //I added 500 to this value because it triggered to fast (personal opinion)
 
     for(let i = 0; i < sections.length; i++) {
-        positions[i] = sections[i].getBoundingClientRect().top + 300;
+        positions[i] = sections[i].getBoundingClientRect().top + 500;
     }
 
     let min = 1000000, posMin;
